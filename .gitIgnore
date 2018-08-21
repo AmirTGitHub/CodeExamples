@@ -1,0 +1,13 @@
+ReactNative/node-modules/
+ReactNative/package_lock.json
+ReactNative/yarn.lock
+ReactNative/yarn-error.log
+.DS_Store
+ReactReduxAuthentication/api/node-modules
+ReactReduxAuthentication/api/yarn.lock
+ReactReduxAuthentication/api/yarn-error.log
+ReactReduxAuthentication/api/package_lock.json
+ReactReduxAuthentication/client/node-modules
+ReactReduxAuthentication/client/yarn.lock
+ReactReduxAuthentication/client/yarn-error.log
+ReactReduxAuthentication/client/package_lock.json

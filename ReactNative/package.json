@@ -1,0 +1,24 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "dependencies": {
+    "@expo/vector-icons": "6.2.2",
+    "exp": "^55.0.5",
+    "expo": "^24.1.0",
+    "moment": "^2.22.2",
+    "moment-jalaali": "^0.7.4",
+    "prop-types": "^15.6.2",
+    "react": "16.0.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-24.0.0.tar.gz",
+    "react-native-elements": "^0.19.1",
+    "react-native-vector-icons": "^4.6.0",
+    "react-navigation": "^1.5.12",
+    "save": "^2.3.2",
+    "striptags": "^3.1.1"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
+  }
+}
