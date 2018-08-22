@@ -1,2 +1,4 @@
 # CodeExamples
-this is an example of my ReactNative and React-Redux authentication
+
+This is an example of my ReactNative code and React-Redux authentication code.
+to instal and run each one of them you need to read the Read me file inside each directory.
