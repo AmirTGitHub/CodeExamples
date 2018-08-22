@@ -13,9 +13,11 @@ import moment from "moment-jalaali";
 moment.loadPersian({ dialect: "persian-modern" });
 moment.loadPersian({ usePersianDigits: true });
 import PropTypes from "prop-types";
+import Dvider from './atom/Divider'
+import FirstNews from './molecule/FirstNews'
+import Divider from "./atom/Divider";
 
 const screenWidth = Dimensions.get("window").width;
-const screenHight = Dimensions.get("screen").height;
 
 export default class NewNewsList extends Component {
   static PropTypes = {
@@ -39,10 +41,18 @@ export default class NewNewsList extends Component {
           />
         }
       >
-        <TouchableOpacity
+        <FirstNews
+          handlePress={() => this.handlePress(news[0].pk)}
+          mainImage={news[0].image}
+          title={news[0].title}
+          pubDate={news[0].pub_date}
+          category={news[0].category}
+        />
+        {/* <TouchableOpacity
           style={styles.firstNews}
           onPress={() => this.handlePress(news[0].pk)}
         >
+          <MainImage mainImage={news[0].image} />
           <Image
             source={{ uri: "https://iranwire.com/" + news[0].image }}
             style={styles.mainImage}
@@ -57,8 +67,8 @@ export default class NewNewsList extends Component {
               {news[0].category}
             </Text>
           </View>
-        </TouchableOpacity>
-        <View style={styles.divider} />
+        </TouchableOpacity> */}
+        <Divider />
         <TouchableOpacity
           style={styles.rowOne}
           onPress={() => this.handlePress(news[1].pk)}
